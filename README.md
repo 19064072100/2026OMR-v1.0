@@ -3,6 +3,10 @@
 input文件夹：答题卡扫描件（jpg，600dpi），统一放于同一文件夹内
 output：存放中间文件，可直接识别扫描偏离位
 注意：扫描准确率唯一取决于放置答题卡时，是否准确放置于扫描仪中，在output中发现明显错误时，只需重新扫描文件
+Usage:
+    python main.py --image <path>              Single image
+    python main.py --folder <path>             Batch process
+    python main.py --config <config.json>      Custom config
 
 This repository is designed for the machine-readable scanning process used in the 2026 National Biology Competition in Qinghai Province (validated in actual use). It is written in Python, with OpenCV image recognition as its core. The prerequisite file is the scanned answer sheet (JPG format), and intermediate files are set up to facilitate rapid verification of the recognition results. Author: Li Zhuangzhuang.
 
